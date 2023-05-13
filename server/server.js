@@ -26,7 +26,7 @@ const MODE = process.env.NODE_ENV
 app.use(helmet())
 
 //Heroku Deployment
-_dirname = path.resolve()
+__dirname = path.resolve()
 if(MODE === "PRODUCTION"){
 	app.use(express.static("client/build"));
 	app.get("*", (req,res)=>{
