@@ -1,0 +1,40 @@
+input,select,textarea{
+    border: 1px solid rgb(86,86,86);
+    padding: 8px 10px;
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus{
+    border: 1px solid rgb(86,86,86);
+    outline: none;
+}
+
+.primary-contained-btn{
+    background-color: var(--primary);
+    color: white;
+    /* padding: 8px 20px; */
+    text-transform: uppercase;
+    outline:none;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+      border-radius: 0.2rem;
+}
+
+.primary-outlined-btn{
+    background-color: white;
+    color: var(--primary);
+    /* padding: 8px 20px; */
+    text-transform: uppercase;
+    outline:none;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.sm{
+    padding: 0.25rem 0.625rem;
+}
+
+.reg{
+    padding: 0.5rem 1.25rem;
+}

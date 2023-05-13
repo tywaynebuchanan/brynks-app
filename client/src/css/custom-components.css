@@ -1,0 +1,57 @@
+.card{
+    background-color: white;
+    box-shadow: 9px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;    
+}
+
+.on-hover{
+    cursor: pointer;
+    color: var(--error-tint);
+}
+
+.loader-parent{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    width: 100%;
+    max-width: 150px;
+}
+.login-logo {
+    width: 100%;
+    max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+table{
+    border: 1px solid #cdcdcd;
+    box-shadow: 9px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.shadow{
+   box-shadow: 9px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.on-link-hover{
+    
+}
