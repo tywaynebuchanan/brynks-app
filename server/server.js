@@ -19,7 +19,7 @@ const TransactionRoutes = require("./routes/transactionsRoutes")
 const Payments = require("./routes/paymentRoutes")
 const Requests = require("./routes/requestRoutes")
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8080
 const MODE = process.env.NODE_ENV
 
 //Security HTTP Header 
@@ -27,12 +27,6 @@ app.use(helmet())
 
 //Heroku Deployment
 __dirname = path.resolve()
-if(MODE === "PRODUCTION"){
-	app.use(express.static("client/build"));
-	app.get("*", (req,res)=>{
-		res.sendFile(path.resolve(__dirname,"client","build","index.html"))
-	})
-}
 
 //Handle Uncaught Exception 
 process.on("uncaughtException",err=>{
@@ -67,6 +61,14 @@ app.use("/api", UserRoutes)
 app.use("/api/transactions", TransactionRoutes)
 app.use("/api/payments", Payments)
 app.use("/api/requests", Requests)
+
+
+if(MODE === "PRODUCTION"){
+	app.use(express.static("client/build"));
+	app.get("*", (req,res)=>{
+		res.sendFile(path.resolve(__dirname,"client","build","index.html"))
+	})
+}
 
 //Middleware to handle errors
 app.use(errorMiddleware);
